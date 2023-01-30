@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="713.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.DashboardController">
+   <children>
+      <Label alignment="CENTER" layoutY="1.0" style="-fx-text-fill: #579D42;" text="Dashboard" textFill="#2262c6">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Pane layoutY="48.0" prefHeight="448.0" prefWidth="726.0" styleClass="container" stylesheets="@../styling/fullpackstyling.css">
+         <children>
+            <BorderPane fx:id="borderpane" layoutX="14.0" layoutY="182.0" prefHeight="255.0" prefWidth="699.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#92d050" height="84.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="165.0" />
+            <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="20.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/money.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="56.0" layoutY="23.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="INCOMES" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#92d050" height="84.0" layoutX="547.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="165.0" />
+            <Label layoutX="589.0" layoutY="23.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="CATEGORIES" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#92d050" height="84.0" layoutX="369.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="165.0" />
+            <Label layoutX="411.0" layoutY="23.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="MEDICINES" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#92d050" height="84.0" layoutX="191.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="165.0" />
+            <Label layoutX="233.0" layoutY="23.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="TRANSACTIONS" textFill="WHITE" />
+            <Label fx:id="incomes" layoutX="20.0" layoutY="55.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="transactions" layoutX="203.0" layoutY="55.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="medicines" layoutX="375.0" layoutY="55.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="categories" layoutX="553.0" layoutY="55.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="198.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/trans.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="378.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/med.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="554.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cat.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="130.0" layoutY="152.0" text="Grafik Penjualan Per Bulan Tahun">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="tahun" layoutX="458.0" layoutY="152.0" text="Label">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+</AnchorPane>

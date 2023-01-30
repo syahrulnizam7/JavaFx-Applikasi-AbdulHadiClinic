@@ -1,0 +1,27 @@
+.sidebar{
+    -fx-background-color:  #579D42;
+
+}
+.labbtn{
+    -fx-text-fill: #2262C6;
+    -fx-background-color: #FEFFFD;
+    -fx-background-radius: 50px;
+}
+.sidebar-btn{
+    -fx-background-color: transparent;
+}
+.sidebar-btn-text{
+    -fx-text-fill: #A2BEE8;
+}
+.sidebar-btn:hover .sidebar-btn-text{
+    -fx-text-fill: #7AA2E7;
+}
+
+.Bayangan {
+	-fx-background-color: #F7FCFE;
+    -fx-effect: dropshadow(three-pass-box, rgb(200, 200, 200), 20, -50, 0, 0);
+}
+
+.FORM {
+-fx-border-color: #949494;
+}

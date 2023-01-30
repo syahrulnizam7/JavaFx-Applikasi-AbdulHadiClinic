@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" depthTest="ENABLE" prefHeight="128.0" prefWidth="383.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-border-radius: 20;" styleClass="border" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.loadingController">
+    <children>
+      <AnchorPane prefHeight="128.0" prefWidth="383.0" style="-fx-background-color: #98c97f; -fx-border-color: #000000;">
+         <children>
+                <ImageView fx:id="imgView" fitHeight="64.0" fitWidth="100.0" layoutX="159.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/LOGOAH.png" />
+                    </image>
+                </ImageView>
+            <ProgressBar fx:id="PB" layoutX="24.0" layoutY="96.0" prefHeight="18.0" prefWidth="335.0" progress="0.0" style="-fx-background-color: #f5f5b5;" />
+            <Label layoutX="24.0" layoutY="78.0" text="Loading....." />
+            <Label fx:id="text" layoutX="240.0" layoutY="78.0" prefHeight="17.0" prefWidth="120.0" />
+            <ProgressIndicator fx:id="PI" layoutX="315.0" layoutY="14.0" prefHeight="43.0" prefWidth="54.0" progress="0.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

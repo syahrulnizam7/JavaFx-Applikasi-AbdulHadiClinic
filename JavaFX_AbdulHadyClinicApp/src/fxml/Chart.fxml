@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="713.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.chartController">
+   <children>
+      <Label alignment="CENTER" layoutY="1.0" style="-fx-text-fill: #579D42;" text="Chart" textFill="#2262c6">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Pane layoutY="48.0" prefHeight="448.0" prefWidth="726.0" styleClass="container" stylesheets="@../styling/fullpackstyling.css">
+         <children>
+            <BorderPane fx:id="borderpane" layoutX="2.0" prefHeight="448.0" prefWidth="726.0">
+               <top>
+                  <Label text="Grafik Penjualan Per Bulan" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+               </top>
+            </BorderPane>
+         </children></Pane>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+</AnchorPane>

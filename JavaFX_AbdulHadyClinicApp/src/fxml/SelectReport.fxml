@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="713.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.selectReportController">
+   <children>
+      <Label alignment="CENTER" layoutY="1.0" style="-fx-text-fill: #579D42;" text="Report" textFill="#2262c6">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Pane layoutY="48.0" prefHeight="448.0" prefWidth="726.0" styleClass="container" stylesheets="@../styling/fullpackstyling.css">
+         <children>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="85.0" prefWidth="275.0" styleClass="FORM">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Select" />
+                  <ChoiceBox fx:id="choice" layoutX="74.0" layoutY="10.0" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #42cf5c;" />
+                  <Button layoutX="130.0" layoutY="48.0" mnemonicParsing="false" onAction="#Search" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #dea11d; -fx-background-radius: 50;" text="SHOW" textFill="WHITE" />
+               </children>
+            </Pane>
+            <BorderPane fx:id="borderpane" layoutX="14.0" layoutY="112.0" prefHeight="326.0" prefWidth="697.0">
+               <center>
+                  <TableView fx:id="tabel" prefHeight="290.0" prefWidth="697.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </center>
+            </BorderPane>
+            <Button layoutX="633.0" layoutY="74.0" mnemonicParsing="false" onAction="#report" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #1dcbde; -fx-background-radius: 50;" text="Print" />
+         </children></Pane>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+</AnchorPane>

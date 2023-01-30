@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="729.0" style="-fx-border-color: #000000;" stylesheets="@../styling/fullpackstyling.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.medicineTableController">
+   <children>
+      <TableView fx:id="tblData" prefHeight="396.0" prefWidth="729.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TableColumn fx:id="IDColumn" prefWidth="75.0" text="ID OBAT" />
+            <TableColumn fx:id="NameColumn" prefWidth="75.0" text="NAMA OBAT" />
+            <TableColumn fx:id="AmountColumn" prefWidth="75.0" text="JUMLAH OBAT" />
+            <TableColumn fx:id="CategoryIDColumn" prefWidth="75.0" text="ID KATEGORI" />
+            <TableColumn fx:id="CategoryColumn" prefWidth="75.0" text="KATEGORI" />
+            <TableColumn fx:id="EXPColumn" prefWidth="75.0" text="EXP" />
+            <TableColumn fx:id="PriceColumn" prefWidth="75.0" text="HARGA" />
+         </columns></TableView>
+   </children>
+</AnchorPane>
